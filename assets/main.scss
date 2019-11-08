@@ -1,0 +1,31 @@
+
+@font-face {
+    font-family: "Roslindale Variable Beta";
+    src: url("~static/fonts/RoslindaleVariableBeta-VF.woff2") format("woff2");
+}
+
+
+/* @font-face {
+    font-family: "Roslindale Variable Display";
+    src: url("~static/fonts/RoslindaleVariableDisplay-VF.woff2") format("woff2");
+} */
+
+
+/* @font-face {
+    font-family: "Output Sans VF";
+    src: url("~static/fonts/Output_Sans-VF.woff2") format("woff2");
+} */
+
+body {
+    min-height: 100vh;
+    font-family: "Roslindale Variable Beta", "Times New Roman", serif;
+    //font-family: "Output Sans VF", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    word-spacing: 1px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
