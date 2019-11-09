@@ -5,6 +5,7 @@
       <img :src="`/products/${product.img}`" alt="">
       <h1>{{ product.name }}</h1>
       <h4>{{ product.price }}</h4>
+      <nuxt-link to="" class="link dim">Add to cart</nuxt-link>
     </article>
 
   </section>
