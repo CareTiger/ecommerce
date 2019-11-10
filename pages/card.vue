@@ -4,7 +4,7 @@
       <h3>Please enter your payment details:</h3>
       <label for="email">Email</label>
       <br />
-      <input id="email" type="email" v-model="stripeEmail" placeholder="name@example.com" />
+      <input id="email" type="email" v-model="stripeEmail" placeholder="name@example.com" class="pa2" />
       <br />
       <label for="card">Credit Card</label>
       <br />
@@ -21,7 +21,7 @@
         @change="complete = $event.complete"
       />
       <button
-        class="pay-with-stripe button"
+        class="pay-with-stripe button pv2 ph3 bg-black white ba b--black"
         @click="pay"
         :disabled="!complete || !stripeEmail"
       >Pay with credit card</button>
