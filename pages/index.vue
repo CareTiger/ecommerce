@@ -4,8 +4,8 @@
     <article  class="mw5 ba pa3 ma3 dib" v-for="product in storedata" :key="product.id">
       <img :src="`/products/${product.img}`" alt="">
       <h1>{{ product.name }}</h1>
-      <h4>{{ product.price }}</h4>
-      <nuxt-link to="" class="f6 link dim ph3 pv2 mb2 dib white bg-black ttu" :click="addToCart()">Add to cart</nuxt-link>
+      <h4>{{ product.price | dollar }}</h4>
+      <nuxt-link :to="`product/${product.id}`" class="f7 link dim ph3 pv2 mb2 dib white bg-black ttu">Details</nuxt-link>
     </article>
 
   </section>
@@ -25,9 +25,6 @@ export default {
   },
   methods: {
     ...mapGetters ([]),
-    addToCart() {
-      console.log("add")
-    }
   }
 }
 </script>
