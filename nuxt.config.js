@@ -6,6 +6,7 @@ export default {
   */
   head: {
     title: 'ecommerce',
+    script: [{ src: 'https://js.stripe.com/v3/' }],
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -30,6 +31,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    `~/plugins/currency-filter.js`
   ],
   /*
   ** Nuxt.js dev-modules
